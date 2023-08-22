@@ -1,4 +1,7 @@
-// Executando o typescript
+/* 
+    -> Executando o typescript 
+    - Podemos compilar o typescript para javaScript no terminal usando tsc nomedoarquivo.ts
+*/
 
 function sum(a:number,b:number){
     return a + b
