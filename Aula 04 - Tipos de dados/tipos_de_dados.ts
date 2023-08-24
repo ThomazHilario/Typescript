@@ -14,3 +14,16 @@ let value = 20; // Variável com tipagem implícita
 // Boolean
 let isStudent:boolean = true; // Variável com tipagem explícita
 let isAutenticate = false; // Variável com tipagem implícita
+
+
+
+/*
+    -> Tipo any
+    - Aceita qualquer tipo de dado.
+*/
+
+let text:any = 10
+text = 'Hello world'
+text = true
+text = []
+text = {}
