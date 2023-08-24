@@ -27,3 +27,23 @@ text = 'Hello world'
 text = true
 text = []
 text = {}
+
+/* 
+    -> Tipo array
+    - No typescript podemos tipar os conteúdo que vem dentro de um array.
+    - Caso não definimos uma tipagem e somente passar valores ao array, ele acaba tendo multiplos tipos de dados.
+    - Podemos usar o union type para definir quais tipos de dados podem estar dentro de um array.
+*/
+
+// Array com type string
+let list_name:string[] = ['Ana','Beatriz',"Filipe"]
+
+// Array com type number
+let numeros:number[] = [1,8,9,0,10,23,543]
+
+// -> Array com dois tipos usando o Union type
+
+let valores: (string | number)[] = ['valor 1',1,'valor 2',2,'valor 3',3]
+
+// -> Array sem tipagem
+let array = ['world',1,true,{}]
