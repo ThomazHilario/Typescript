@@ -56,3 +56,22 @@ let array = ['world',1,true,{}]
 
 let statusWhatsap:[string,string,string] = ['Triste','Normal',"Feliz"]
 let endereço:[string,string,number] = ['Rua Desconhecido cunha','Bairro Desconhecido',887]
+
+
+
+/*
+    -> Object
+    - Semelhante ao do javaScript
+*/
+
+let aluno:object = {
+    name: "thomaz",
+    age: 18,
+    goodNotes: true,
+}
+
+let filme:object = {
+    name: "Kimi no na wa",
+    autor: "Makoto shinkai",
+    personagens:["Taki Tachibana","Mitsuha Miyamizu","Tsukasa Fujii"]
+}
