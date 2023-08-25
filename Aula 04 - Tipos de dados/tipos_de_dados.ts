@@ -51,7 +51,8 @@ let array = ['world',1,true,{}]
 
 /* 
     -> Tuplas
-    - É um array no qual podemos definir quantos valores e quais os tipos de dados podem ser passados no array. 
+    - É um array com estrutura definida pelo desenvolvedor, tanto para a quantidade de valores, como cada tipo de dado para eles.
 */
 
 let statusWhatsap:[string,string,string] = ['Triste','Normal',"Feliz"]
+let endereço:[string,string,number] = ['Rua Desconhecido cunha','Bairro Desconhecido',887]
