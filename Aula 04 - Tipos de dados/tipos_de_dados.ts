@@ -47,3 +47,11 @@ let valores: (string | number)[] = ['valor 1',1,'valor 2',2,'valor 3',3]
 
 // -> Array sem tipagem
 let array = ['world',1,true,{}]
+
+
+/* 
+    -> Tuplas
+    - É um array no qual podemos definir quantos valores e quais os tipos de dados podem ser passados no array. 
+*/
+
+let statusWhatsap:[string,string,string] = ['Triste','Normal',"Feliz"]
