@@ -103,3 +103,17 @@ enum Status{
     sleeping
 }
 
+/*
+    -> Type Null
+    - Algo que existe mas não tem nada dentro (Ausência de valor da variável).
+*/
+
+let userName:null | string;
+
+/*
+    -> Type Undefined
+    - Algo que não existe.
+*/
+
+let oneValue;
+console.log(oneValue) // irá retornar underfined porque não tem um valor definido.
