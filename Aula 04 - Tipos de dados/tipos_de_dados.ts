@@ -75,3 +75,31 @@ let filme:object = {
     autor: "Makoto shinkai",
     personagens:["Taki Tachibana","Mitsuha Miyamizu","Tsukasa Fujii"]
 }
+
+/*
+    -> Type Enum
+    - Serve para enumerar tipos de dados.
+    - Sua estrutura lembra uma classe em javascript, sem o constructor.
+    - Caso os parametros passados não tenha recebido valores, O Ts os enumera começando do 0.
+    - Acessamos os valores como se fosse um objeto, colocando o nome.pripriedade
+*/
+
+enum backgroundColors{
+    vermelho = "red",
+    azul = "blue",
+    rosa = "pink",
+    roxo = "purple"
+}
+
+console.log(backgroundColors.roxo)
+
+// Criando um tipo enum sem valores
+// como não terá valores o TS enumera os começando do zero
+
+enum Status{
+    Offline,
+    Online,
+    absent,
+    sleeping
+}
+
