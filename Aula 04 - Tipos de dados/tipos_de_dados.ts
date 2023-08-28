@@ -117,3 +117,16 @@ let userName:null | string;
 
 let oneValue;
 console.log(oneValue) // irá retornar underfined porque não tem um valor definido.
+
+
+/*
+    -> Type Unknown
+    - Significa desconhecido
+    - Usada geralmente quando o desenvolvedor não sabe o tipo de dado que a variável vai receber.
+    - Valores do tipo unknown só podem ser atribuidas em variáveis que tem a tipagem any ou unknown.
+*/
+
+let response:unknown;
+response = "Luiz"
+
+let valueResponse:any = response
