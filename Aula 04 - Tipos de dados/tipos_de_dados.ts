@@ -130,3 +130,21 @@ let response:unknown;
 response = "Luiz"
 
 let valueResponse:any = response
+
+/*
+    -> Type assertions
+    - Afirmando algum tipo de dado.
+    - Usamos o as para afirma o tipo de dado de uma variável.
+*/
+
+// Ex: 01
+let responseApi:unknown = "Thomaz";
+let valueResponseApi:string = responseApi as string
+
+// Ex: 02
+let responseApi2:unknown = true;
+let valueResponseApi2:boolean = responseApi2 as boolean
+
+// Ex: 03
+let responseApi3:unknown = 10;
+let valueResponseApi3:number = responseApi3 as number
