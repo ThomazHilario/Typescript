@@ -1,12 +1,12 @@
 /*
     -> Parâmetros opcionais em funções
     - Podemos definir o valor de um parâmetro caso alguem não passe nada.
-    - E podemos deixar o valor opcional, ou seja o usuário não precisa preencher aquele parâmetro se ele não quiser, usando ?
+    - E podemos deixar o valor opcional, ou seja o usuário não precisa preencher aquele parâmetro se ele não quiser, usando: ?
 */
 
 // Definindo um valor por padrão de um parâmetro
 function cadastro(nome:string,email:string,senha:number,sexo = "F"):void{
-    let pessoa = {
+    let pessoa:object = {
         nome,
         email,
         senha,
@@ -19,7 +19,7 @@ cadastro('Ana','ana@email.com',34755544)
 
 // Definindo um valor opcional
 function Cadastro2(nome:string,email:string,idade?:number):void{
-    let pessoa = {
+    let pessoa:object = {
         nome,
         email,
         idade
