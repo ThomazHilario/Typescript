@@ -1,6 +1,6 @@
 /*
     -> type alias
-    - Uma tipagem criada pelo desenvolvedor onde pode ter varios tipos de dados.
+    - Um apelido para tipos de dados existentes.
 */
 
 type list = string[] | number[] | (string | number)[] 
