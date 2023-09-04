@@ -6,4 +6,4 @@
 type list = string[] | number[] | (string | number)[] 
 
 
-let lista:list = []
+let lista:list = [4,5,7,8,1,'24','hello']
