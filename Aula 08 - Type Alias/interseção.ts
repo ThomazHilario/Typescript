@@ -1,6 +1,6 @@
 /*
     -> interseção no type alias
-    - Podemos criar estrutura de objeto com o type alias,e fazer a interseção(UNIÃO) entre dois type alias,para um herdar as propriedades do outro.
+    - Podemos criar estrutura de objeto com o type alias,e fazer a interseção(UNIÃO) entre dois type alias,para um herdar as propriedades do outro usando: &.
 */
 
 type Person = {
