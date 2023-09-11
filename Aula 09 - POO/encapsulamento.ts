@@ -4,11 +4,12 @@
     - As propriedades e métodos podem receber por meio do encapsulamento: public(padrão), private, protected e readonly.
     - Protected: Atributos e métodos protegidos podem ser alterados ou acessados somente dentro da class ou subclass.
     - Private: Atributos e métodos só podem ser acessados dentro da classe criada.
+    - readonly: (Apenas para propriedades) não pode mudar o valor da propriedades, somente ler.
 */
 
 class Person{
     // Definindo propriedades
-    public id:number = 1;
+    readonly id:number;
     protected name:string;
     age:number;
     public email:string;
