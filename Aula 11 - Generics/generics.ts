@@ -19,6 +19,3 @@ function verify<t>(value1:t,value2:t):string{
 
 // verificando argumentos de strings
 console.log(verify<string>('hello','world'))
-
-
-
