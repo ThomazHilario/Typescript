@@ -22,3 +22,23 @@ function logClass(menssagem:string){
 }
 @logClass('Servidor ligado')
 class sistema{}
+
+
+// Praticando //
+
+function LogIp(myIp:string){
+    // retornando o decorator com a função factory
+    return (target:any) => {
+        // retornando a classe extendida de target
+        return class extends target{
+            ip = myIp
+    }   }
+}
+
+@LogIp(`191.008.653.01`)
+class Server{
+
+}
+
+const server = new Server
+console.log(server)
