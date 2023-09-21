@@ -6,8 +6,12 @@
 function LogVerifyAge(idade:number){
 
     // retornando o decorator
+    // o parametro descriptor retorna o método da classe
     return (target:any,key:string,descriptor:PropertyDescriptor) => {
+
+        // Salvando a função original
         const metodoOriginal = descriptor.value
+
         descriptor.value = function (){
             if(idade >= 18){
                 console.log('Cadastro para maior de idade')
@@ -32,8 +36,9 @@ class cadastro{
         this.email = email
     }
 
-    // metodo
+    // Declarando o decorator
     @LogVerifyAge(18)
+    // método
     verificandoPessoa(){
         console.log('Seja bem vindo: ',this.name)
     }
