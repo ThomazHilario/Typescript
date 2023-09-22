@@ -13,13 +13,13 @@ buttonClick.addEventListener('click',function(){
 
     switch (Select.value) {
         case '0':
-            resultado.textContent = String(sum(parseInt(inputValor1.value),parseInt(inputValor2.value)))
+            resultado.textContent = String(sum(Number(inputValor1.value),Number(inputValor2.value)))
             break;
         case '1':
-            resultado.textContent = String(sub(parseInt(inputValor1.value),parseInt(inputValor2.value)))
+            resultado.textContent = String(sub(Number(inputValor1.value),Number(inputValor2.value)))
             break;
         case '2':
-            resultado.textContent = String(mult(parseInt(inputValor1.value),parseInt(inputValor2.value)))
+            resultado.textContent = String(mult(Number(inputValor1.value),Number(inputValor2.value)))
             break;
         case '3':
             resultado.textContent = String(division(Number(inputValor1.value),Number(inputValor2.value)))
