@@ -9,7 +9,7 @@ const buttonClick = document.getElementById('click') as HTMLButtonElement
 const Select = document.getElementById('selectoptions') as HTMLSelectElement
 
 let resultado = document.getElementById('result') as HTMLElement
-buttonClick?.addEventListener('click',function(){
+buttonClick.addEventListener('click',function(){
 
     switch (Select.value) {
         case '0':
@@ -17,6 +17,12 @@ buttonClick?.addEventListener('click',function(){
             break;
         case '1':
             resultado.textContent = String(sub(parseInt(inputValor1.value),parseInt(inputValor2.value)))
+            break;
+        case '2':
+            resultado.textContent = String(mult(parseInt(inputValor1.value),parseInt(inputValor2.value)))
+            break;
+        case '3':
+            resultado.textContent = String(division(Number(inputValor1.value),Number(inputValor2.value)))
             break;
         default:
             break;
@@ -34,3 +40,10 @@ function sub(value1:number,value2:number):number{
     return value1 - value2
 }
 
+function mult(value1:number,value2:number):number{
+    return value1 * value2
+}
+
+function division(value1:number,value2:number):number{
+    return value1 / value2
+}
