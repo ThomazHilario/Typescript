@@ -6,7 +6,11 @@ const inputValor2 = document.getElementById('num2');
 const buttonClick = document.getElementById('click');
 // Select tag
 const Select = document.getElementById('selectoptions');
+// painel de resultado
 let resultado = document.getElementById('result');
+//regex
+let digito = new RegExp(/[0-9]/);
+// Event button
 buttonClick.addEventListener('click', function () {
     switch (Select.value) {
         case '0':
@@ -24,17 +28,24 @@ buttonClick.addEventListener('click', function () {
         default:
             break;
     }
+    if (!digito.test(inputValor1.value) || !digito.test(inputValor2.value)) {
+        alert('Os valores não correspondem');
+    }
 });
-// funcoes das operacoes
+// funcões das operacões
+// Soma
 function sum(value1, value2) {
     return value1 + value2;
 }
+// Subtração
 function sub(value1, value2) {
     return value1 - value2;
 }
+// Multiplicação
 function mult(value1, value2) {
     return value1 * value2;
 }
+// Divisão
 function division(value1, value2) {
     return value1 / value2;
 }

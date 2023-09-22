@@ -3,12 +3,16 @@ const inputValor1 = document.getElementById('num1') as HTMLInputElement
 const inputValor2 = document.getElementById('num2') as HTMLInputElement
 
 // button
-const buttonClick = document.getElementById('click') as HTMLButtonElement
+const buttonClick = document.getElementById('click') as HTMLElement
 
 // Select tag
 const Select = document.getElementById('selectoptions') as HTMLSelectElement
 
+// painel de resultado
 let resultado = document.getElementById('result') as HTMLElement
+//regex
+let digito = new RegExp(/[0-9]/)
+// Event button
 buttonClick.addEventListener('click',function(){
 
     switch (Select.value) {
@@ -28,22 +32,29 @@ buttonClick.addEventListener('click',function(){
             break;
     }
 
+    if(!digito.test(inputValor1.value) || !digito.test(inputValor2.value)){
+        alert('Os valores não correspondem')
+    }
 })
 
-// funcoes das operacoes
+// funcões das operacões
 
+// Soma
 function sum(value1:number,value2:number):number{
     return value1 + value2
 }
 
+// Subtração
 function sub(value1:number,value2:number):number{
     return value1 - value2
 }
 
+// Multiplicação
 function mult(value1:number,value2:number):number{
     return value1 * value2
 }
 
+// Divisão
 function division(value1:number,value2:number):number{
     return value1 / value2
 }
