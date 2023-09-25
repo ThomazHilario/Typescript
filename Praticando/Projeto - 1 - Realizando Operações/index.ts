@@ -10,8 +10,16 @@ const Select = document.getElementById('selectoptions') as HTMLSelectElement
 
 // painel de resultado
 let resultado = document.getElementById('result') as HTMLElement
+
 //regex
 let digito = new RegExp(/[0-9]/)
+
+// interface
+interface valores{
+    value1:number,
+    value2:number
+}
+
 // Event button
 buttonClick.addEventListener('click',function(){
 
@@ -26,7 +34,7 @@ buttonClick.addEventListener('click',function(){
             resultado.textContent = String(mult(Number(inputValor1.value),Number(inputValor2.value)))
             break;
         case '3':
-            resultado.textContent = String(division(Number(inputValor1.value),Number(inputValor2.value)))
+            resultado.textContent = String(division({value1:Number(inputValor1.value),value2:Number(inputValor2.value)}))
             break;
         default:
             break;
@@ -55,6 +63,6 @@ function mult(value1:number,value2:number):number{
 }
 
 // Divisão
-function division(value1:number,value2:number):number{
+function division({value1, value2}:valores):number{
     return value1 / value2
 }
