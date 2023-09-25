@@ -1,0 +1,48 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 50px;
+}
+form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+/* container */
+#container{
+    background-color: rgb(218, 228, 237);
+    padding: 10px;
+    border-radius: 5px;
+}
+#input{
+    text-align: center;
+}
+#click{
+    cursor: pointer;
+    border-radius: 5px;
+    height: 25px;
+    width: 75px;
+}
+/* lista ul */
+#myList{
+    display: none;
+    margin-top: 10px;
+}
+li{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2px;
+    margin: 5px 0px;
+}
+#deleteButton{
+    height: 25px;
+}

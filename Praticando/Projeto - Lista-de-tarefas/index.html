@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>To do list - typescript</title>
+</head>
+<body class="bg-violet-900" onload="loadPage()">
+    <h1 class="text-5xl">Minha Lista</h1>
+    <!-- Container -->
+    <div id="container">
+        <!-- formulario -->
+        <form action="">
+            <input type="text" name="input text" id="input" class="border-2 border-indigo-500/75 w-60 h-5.5 rounded-sm">
+            <button id="click" class="bg-indigo-600">Submit</button>
+        </form>
+
+        <!-- lista -->
+        <ul id="myList"></ul>
+    </div>
+    <script src="script/index.js"></script>
+</body>
+</html>
