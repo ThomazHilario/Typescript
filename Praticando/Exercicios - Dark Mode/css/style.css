@@ -1,0 +1,32 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    height: 100vh;
+    background-color: white;
+    transition: 0.7s;
+}
+header{
+    height: 70px;
+    background-color: aliceblue;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+header > i{
+    font-size: 30px;
+    cursor: pointer;
+}
+
+/* dark mode */
+.dark{
+    background-color: rgb(35, 36, 49);
+    color: white;
+}
+.dark header{
+    background-color: rgb(41, 42, 57);
+    color: white;
+    box-shadow: 1px 1px 10px black;
+}
